@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h2>Update CSS Variables with <span class="hl">JS</span></h2>
+    <article class="controls-holder">
+      <div class="control">
+        <label for="size">Size</label>
+        <input
+          type="range"
+          name="size"
+          min="1"
+          max="100"
+          value="40"
+          data-sizing="%"
+        />
+      </div>
+      <div class="control">
+        <label for="blur">Blur</label>
+        <input
+          type="range"
+          name="blur"
+          min="0"
+          max="25"
+          value="10"
+          data-sizing="px"
+        />
+      </div>
+      <div class="control">
+        <label for="base">Base Color</label>
+        <input type="color" name="base" value="#ffc600" />
+      </div>
+    </article>
+    <article>
+      <img title="img" src="./public/timeStamp.jpeg" />
+    </article>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
